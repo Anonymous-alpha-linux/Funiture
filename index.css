@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+}
+
+*::before, *::after {
+ box-sizing: border-box;
+}
+
+body {
+ font-size: 16px;
+}
+
+li {
+ text-decoration: none;
+ list-style-type: none;
+}
+
+nav {
+ display: grid;
+ grid-template-columns: 85% 15%;
+ background-color: white;
+ position: fixed;
+ width: 100vw;
+ z-index: 1000;
+ padding: 30px 10%;
+}
+
+.right--float {
+ float: right;
+}
+
+.padding {
+ padding: 150px 10%;
+}
+
+.rows {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+}
+
+.col {
+ width: 100%;
+ text-align: center;
+ font-weight: 600;
+ vertical-align: middle;
+ font-size: 0.9em;
+ padding: 10px 20px;
+ display: flex;
+ align-items: center;
+}
+
+.logo {
+ font-weight: 900;
+ font-size: x-large;
+}
+
+.links {
+ font-weight: 700;
+}
+
+.communication {
+ text-align: right;
+ justify-content: flex-end;
+ align-items: center;
+}
+
+i {
+ margin: 0 10px
+}
+
+header {
+ display: flex;
+ align-items: flex-end;
+ position: relative;
+}
+
+.banner {
+ background: linear-gradient(to bottom right, #42EADDFF, white);
+ width: 100%;
+ height: 70vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ padding: 50px 50px;
+ word-spacing: 5px;
+}
+
+.banner>h1 {
+ line-height: 80px;
+ letter-spacing: 2px;
+}
+
+.banner>p {
+ font-weight: 400;
+ line-height: 30px;
+}
+
+.btn--container {
+ display: flex;
+}
+
+.btn {
+ padding: 1.5em 2em;
+ border: none;
+ font-weight: 500;
+ margin-right: 20px;
+ transition: 0.s cubic-bezier(0.215, 0.610, 0.355, 1);
+ cursor: pointer;
+}
+
+.pro--btn {
+ color: white;
+ background-color: black;
+}
+
+.pro--btn:hover {
+ background-color: transparent;
+ color: black;
+ border: 2px solid black;
+}
+
+.to--btn {
+ border: 2px solid black;
+ background-color: transparent;
+}
+
+.to--btn:hover {
+ background-color: black;
+ color: white;
+}
+
+.primary--btn {
+ color: black;
+ background-color: white;
+}
+
+.primary--btn:hover {
+ color: red;
+}
+
+.template {
+ width: 100%;
+ background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/posters-in-cozy-apartment-interior-royalty-free-image-943910360-1534189931.jpg) no-repeat;
+ background-size: 100% 100%;
+ height: 600px;
+}
+
+.container-flex {
+ display: flex;
+}
+
+.container-flex-column {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.container-grid-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+
+.title {
+ font-weight: 500;
+ font-size: 4rem;
+ line-height: 80px;
+ letter-spacing: 2px;
+ transition: 0.6s ease-in-out;
+}
+
+.center-align {
+ text-align: center;
+ padding: 50px;
+}
+
+.content {
+ opacity: 0.8;
+ line-height: 35px;
+ word-spacing: 10px;
+}
+
+.contact>aside {
+ background-color: rgb(241, 241, 220);
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ text-align: center;
+ align-items: center;
+}
+
+.contact .title {
+ font-size: 40px;
+ word-spacing: 0;
+}
+
+.contact .btn {
+ width: 150px;
+ text-align: center;
+}
+
+footer {
+ background-color: black;
+ color: white;
+ padding: 50px 230px;
+ place-content: end space-between;
+}
+
+.footer-header {
+ padding-bottom: 20px;
+}
+
+.footer-header>div {
+ vertical-align: middle;
+}
+
+.footer-header h2 {
+ font-weight: 300;
+ line-height: 50px;
+ font-size: 1.5em;
+}
+
+.footer-header button {
+ margin: 0;
+}
+
+.footer-details {
+ justify-content: space-between;
+}
+
+.footer-details>div {
+ width: 25%;
+ height: 180px;
+}
+
+.company ul {
+ height: 60%;
+}
+
+.newsletter {
+ justify-content: flex-start;
+}
+
+.newsletter>div {
+ height: 60%;
+ justify-content: space-between;
+}
+
+.footer-title {
+ font-weight: 500;
+ line-height: 50px;
+}
+
+.footer-text {
+ font-weight: 200;
+ opacity: 0.5;
+ font-size: 0.85rem;
+}
+
+.form-control {
+ position: relative;
+ overflow: hidden;
+ height: 45px;
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.form {
+ border-radius: 10px;
+ height: 100%;
+ width: 100%;
+ padding: 0 20px;
+ background-color: rgb(14, 13, 13);
+ border: none;
+ color: white;
+}
+
+.form-control>button {
+ position: absolute;
+ top: 0;
+ right: 0;
+ margin: 0;
+ padding: 0;
+ height: 100%;
+ width: 30%;
+ background-color: white;
+ border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 1380px) {
+ nav {
+  padding: 20px;
+ }
+ .padding {
+  padding: 100px 2%;
+ }
+}
+
+@media screen and (max-width: 992px) {
+ nav ul:not(:first-child) {}
+ .padding {
+  padding: 100px 0;
+ }
+ header {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+ }
+ .banner {
+  width: 100%;
+  background: none;
+ }
+ .col:not(.logo), .communication {
+  display: none;
+ }
+ .banner .title, .banner .banner-des, .banner .btn--container {
+  z-index: 100;
+ }
+ .banner .title {
+  width: 100%;
+  text-overflow: ellipsis;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 10px;
+  color: black;
+  text-align: right;
+  background: linear-gradient(to bottom right, #42EADDFF, white);
+ }
+ .banner .banner-des {
+  padding: 10px;
+  color: black;
+  text-align: right;
+  background: linear-gradient(to bottom right, #42EADDFF, white);
+ }
+ .banner .btn--container {
+  justify-content: center;
+ }
+ .banner .btn {
+  box-shadow: 5px 5px 20px black;
+ }
+ .banner .to--btn {
+  color: white;
+  border: 2px solid white;
+ }
+ header .template {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+ }
+ .mission article {
+  padding: 10px;
+  text-justify: inter-cluster;
+  font-size: 3em;
+ }
+ .mission .content {
+  text-align: justify;
+  padding: 10px;
+ }
+ .rows {
+  flex-wrap: wrap;
+  align-content: center;
+ }
+ .items {
+  flex-basis: 30%;
+  margin: 5px;
+  flex-grow: 1;
+ }
+ .contact {
+  display: inline-block;
+  padding: 120px 10px
+ }
+ .contact .template {
+  display: none;
+ }
+ .contact aside {
+  width: 100%;
+ }
+ footer {
+  padding: 50px 20px;
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .banner {}
+ header .template {}
+}

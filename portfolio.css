@@ -1,0 +1,19 @@
+/* Flex Container => Parent */
+
+ul {
+ display: flex;
+ padding: 20px;
+ background-color: brown;
+ align-items: center;
+ flex-wrap: wrap;
+ justify-items: center;
+}
+
+li {
+ list-style-type: none;
+ background-color: blue;
+ padding: 10px;
+ margin: 20px;
+ color: white;
+ width: 50px;
+}
